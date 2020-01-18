@@ -1,0 +1,73 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 75%/1.4 verdana,Helvetica,sans-serif;
+    background: rgb(247,247,248);
+background: radial-gradient(circle, rgba(247,247,248,1) 0%, rgba(105,105,105,1) 100%);
+    text-align: center;
+}
+.container {
+    border: 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.intro {
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.demonstration {
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.road {
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+
+.about {
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.participation {
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.benefits {
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.require { 
+    flex: 0 0 33%;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid;
+}
+header {
+    width: 772px;
+    height: 178px;
+    background: url(top.jpg);
+}
+.summary p:first-child {
+    padding-top: 14px;
+    position: relative;
+    background: url(quicksummary_top.gif) top no-repeat;
+}
+.summary p:last-child, .preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2),.requirements p:nth-child(6) {
+    position: relative;
+    padding-bottom: 20px;
