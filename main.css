@@ -1,68 +1,85 @@
-
+html {
+    display: block;
+    color: -internal-root-color;
+}
 body {
-    margin: 0;
-    padding: 0;
-    font: 75%/1.4 verdana,Helvetica,sans-serif;
-    background: rgb(247,247,248);
-background: radial-gradient(circle, rgba(247,247,248,1) 0%, rgba(105,105,105,1) 100%);
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #122981 url(gradient_bg.jpg) repeat-x;
+    margin: 0px;
     text-align: center;
+}
+h1 {
+    background: transparent url(h1.gif) no-repeat top left;
+    width: 355px;
+    height: 29px;
+    float: left;
+    margin: 0px;
+}
+title {
+    color: #ff9600
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;
+    color: #fff;
+    font-size: 0.70em;
+    line-height: 1.25em;
 }
 .container {
     border: 2px solid;
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-flow: row wrap;
     justify-content: flex-end;
 }
 
 .intro {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 0 0 33%;
+    background-color: ;
+    border-radius: 5px;
+    border: 2px solid;
+    background: transparent url(divider02.jpg) no-repeat;
+}
+.card {
+    width: 100%;
     flex: 0 0 33%;
     background-color: white;
     border-radius: 5px;
     border: 2px solid;
-}
-.demonstration {
-    flex: 0 0 33%;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid;
-}
+    background: transparent url(divider02.jpg) no-repeat;
+    padding-top: 60px;
+    margin-top: 6px;
+    float: left;
+    }
 
-.road {
-    flex: 0 0 33%;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid;
-}
-
-.about {
-    flex: 0 0 33%;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid;
-}
-.participation {
-    flex: 0 0 33%;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid;
-}
-.benefits {
-    flex: 0 0 33%;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid;
-}
-.require { 
-    flex: 0 0 33%;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid;
-}
 header {
     width: 772px;
     height: 178px;
     background: url(top.jpg);
 }
+
+div {
+    display: block;
+}
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+}
+    
 .summary p:first-child {
     padding-top: 14px;
     position: relative;
@@ -71,3 +88,57 @@ header {
 .summary p:last-child, .preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2),.requirements p:nth-child(6) {
     position: relative;
     padding-bottom: 20px;
+}
+.designer li a {
+        font-weight: bold;
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+}
+.sidebar a.designer-name {
+    display: inline;
+    color: #ff9600;
+    text-decoration: none;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.design-selection li a {
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sidebar .wrapper {
+    font-size: 0.70em;
+    background: transparent url(paper-bg.jpg) top left repeat-y;
+    padding: 10px;
+    width: 141px;
+}
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .sidebar h3.select, .sidebar h3.archives, .sidebar h3.resources {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sidebar h3.select {
+    background: transparent url(h3_select.gif) no-repeat;
+}
+.sidebar h3 {
+    width: 141px;
+    height: 20px;
+    display: block;
+    margin: 0px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
