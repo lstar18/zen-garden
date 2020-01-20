@@ -2,6 +2,11 @@ html {
     display: block;
     color: -internal-root-color;
 }
+header {
+    width: 772px;
+    height: 178px;
+    background: url(top.jpg);
+}
 body {
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -30,12 +35,26 @@ p {
     font-size: 0.70em;
     line-height: 1.25em;
 }
+.sidebar .wrapper {
+    font-size: 0.70em;
+    background: transparent url(paper-bg.jpg) top left repeat-y;
+    padding: 10px;
+    width: 141px;
+}
+
 .container {
     border: 2px solid;
     display: flex;
     width: 100%;
     flex-flow: row wrap;
     justify-content: flex-end;
+    float: left;
+}
+
+.side {
+    width: 300px;
+    float:right; 
+  
 }
 
 .intro {
@@ -45,10 +64,10 @@ p {
     border-radius: 5px;
     border: 2px solid;
     background: transparent url(divider02.jpg) no-repeat;
+    width: 100%;
 }
 .card {
-    width: 100%;
-    flex: 0 0 33%;
+    width: 50%;
     background-color: white;
     border-radius: 5px;
     border: 2px solid;
@@ -56,14 +75,22 @@ p {
     padding-top: 60px;
     margin-top: 6px;
     float: left;
+    position: relative;
     }
-
-header {
-    width: 772px;
-    height: 178px;
-    background: url(top.jpg);
-}
-
+.summary p:first-child {
+        padding-top: 14px;
+        position: relative;
+        background: url(quicksummary_top.gif) top no-repeat;
+    }
+.summary p:last-child, .preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2),.requirements p:nth-child(6) {
+        position: relative;
+        padding-bottom: 20px;
+    }
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .sidebar h3.select, .sidebar h3.archives, .sidebar h3.resources {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 div {
     display: block;
 }
@@ -79,16 +106,6 @@ div {
 	margin-bottom: 5px;
 	list-style-type: none;
 }
-    
-.summary p:first-child {
-    padding-top: 14px;
-    position: relative;
-    background: url(quicksummary_top.gif) top no-repeat;
-}
-.summary p:last-child, .preamble p:nth-child(4), .explanation p:nth-child(3), .participation p:nth-child(4), .benefits p:nth-child(2),.requirements p:nth-child(6) {
-    position: relative;
-    padding-bottom: 20px;
-}
 .designer li a {
         font-weight: bold;
         color: #fff;
@@ -96,7 +113,7 @@ div {
         text-transform: uppercase;
         text-decoration: none;
 }
-.sidebar a.designer-name {
+a.designer-name {
     display: inline;
     color: #ff9600;
     text-decoration: none;
@@ -112,17 +129,6 @@ div {
     text-decoration: none;
 }
 
-.sidebar .wrapper {
-    font-size: 0.70em;
-    background: transparent url(paper-bg.jpg) top left repeat-y;
-    padding: 10px;
-    width: 141px;
-}
-.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .sidebar h3.select, .sidebar h3.archives, .sidebar h3.resources {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-}
 .sidebar h3.select {
     background: transparent url(h3_select.gif) no-repeat;
 }
